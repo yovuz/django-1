@@ -1,0 +1,16 @@
+{% extends 'base.html' %}  # basehtml cagyrdyk
+
+
+{% block content %}
+<h1>Products</h1>
+<h2>Products</h2>
+<h3>Products</h3>
+<h4>Products</h4>
+<h5>Products</h5>
+<h6>Products</h6>
+<ul>
+    {% for product in products %}
+    <li>{{product.name}} {{product.price}} {{product.stock}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
