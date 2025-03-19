@@ -1,0 +1,11 @@
+{% extends 'base.html' %}  # basehtml cagyrdyk
+
+
+{% block content %}
+<h1>Sale</h1>
+<ul>
+    {% for sale in sales %}
+    <li> {{sale.price}} - {{sale.definition}} </li>
+    {% endfor %}
+</ul>
+{% endblock %}
