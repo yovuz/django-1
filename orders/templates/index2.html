@@ -1,0 +1,11 @@
+<h1>Orders</h1>
+<h2>Orders</h2>
+<h3>Orders</h3>
+<h4>Orders</h4>
+<h5>Orders</h5>
+<h6>Orders</h6>
+<ul>
+    {% for order in orders %}
+    <li>{{order.kod}} {{order.total_price}} {{order.quantity}}</li>
+    {% endfor %}
+</ul>
