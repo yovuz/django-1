@@ -1,0 +1,12 @@
+{% extends 'base.html' %}  # basehtml cagyrdyk
+
+
+{% block content %}
+<h1>Offers</h1>
+
+<ul>
+    {% for offer in offers %}
+    <li>{{offer.like}} {{offer.dislike}} </li>
+    {% endfor %}
+</ul>
+{% endblock %}
